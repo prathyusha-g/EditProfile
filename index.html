@@ -5,23 +5,139 @@
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js">
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
+      .navbar-brand-text{
+        color: grey;
+        text-decoration: underline;
+        padding-right:20px;
+      }
+      .navbar-brand-icon i{
+        font-size:35px;
+        color: grey;
+      }
+      .nav-span{
+        padding-right:20px;
+      }
     img{
         width:250px;
-        padding-left:50px;
+        padding-left:80px;
     }
     .nav-icons{
-        padding-right:50px;
+        padding-right:80px;
     }
+    #primary-nav {
+  background-color: #f5f5ef;
+  
+}
+
+#menu a:hover {
+    color:#1e1e15 ;
+    border-bottom: #ffcc00 solid 5px;
+}
+.nav-item a{
+    color:#1e1e15;
+    font-size:20px;
+    padding: 10px 10px;
+    padding-right:120px;
+
+}
+.form-group input{
+        width: 400px;
+        color:gray;
+       }
+       .form-group  input[type="text"],
+select.form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid grey;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.form-group input[type="text"]:focus,
+select.form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.btn{
+    background-color: #f0ba0a;
+    color:whitesmoke;
+}
+
+.edit-profileForm{
+  padding-top:80px;
+}
+.input-gender{
+  padding-right:10px;
+}
     </style>
     </head>
     <body>
             <nav class="navbar navbar-white bg-white justify-content-between">
-                    <img src="https://lh3.googleusercontent.com/proxy/w9ZTQKsC3PQOYqHAm5mW3jBdhBYMEBn-9O9b6LSQQuNUK8uf64p3j9qByRTlDuqTiRHWL8wH_opWjGn_K6jROLmNVsIh3oXEZpyA2tlhpA">
+                    <img src="https://lh3.googleusercontent.com/proxy/t6YZhxLhIFhaU0Gc-RIMnWANqspPiaIgwf9sf10oknVmLzdAGXUhI257fdKWvFRjRVzgNpNwRJU5itgCFWce9l1q8l9fTlxMEkPSK1NVaA">
                     <div class="form-inline">
-                            <a href="#" class="navbar-brand" style="color: grey;text-decoration: underline">My Class Room</a>
-                            <a class="navbar-brand" style="font-size:35px;color: grey"><i class="fa fa-bell-o"></i></a>
-                            <a class="navbar-brand" style="font-size:35px;color: grey"><i class="fa fa-user-circle-o" ></i></a>  <span class="nav-icons"></span>              
+                            <a href="#" class="navbar-brand-text">My Class Room</a>
+                            <a class="navbar-brand-icon"><i class="fa fa-bell-o"></i></a><span class="nav-span"></span>
+                            <a class="navbar-brand-icon"><i class="fa fa-user-circle-o" ></i></a>  <span class="nav-icons"></span>              
                     </div>
             </nav>
+            
+            <div id="primary-nav">
+
+                    <div class="container">
+                    <div id="menu">
+                      <ul class="nav">
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Edit Profile</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Change Password</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Invoice</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Certification</a>
+                        </li>
+                      </ul>    
+                    </div>
+                    </div>
+                    
+                  </div>
+                  <div class="edit-profileForm">
+                  <div class="container">
+                  <div class="form-group">
+                    <input type="text" name="name" placeholder="Full Name" class="form-control">
+                    <br>
+                    <input type="text" name="name" placeholder="User Name" class="form-control">
+                    <br>
+                    <input type="text" name="name" placeholder="Email" class="form-control">
+                    <br>
+                    <input type="text" name="name" placeholder="Phone" class="form-control">
+                    <br>
+                    <input type="text" name="name" placeholder="Location" class="form-control">
+                    <br>
+                  
+                  </div>
+                  <div class="form-check form-check-inline">
+            
+                      Gender:<span class="input-gender"></span><input class="form-check-input"  checked type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                      <label class="form-check-label" for="inlineRadio1">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                      <label class="form-check-label" for="inlineRadio2">Female</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                      <label class="form-check-label" for="inlineRadio3">Other</label>
+                    </div>
+                    <br>
+                    <br>
+                    <button type="button" class="btn">Submit</button>
+                  </div>
+                </div>
+
     </body>
 </html>
