@@ -24,22 +24,23 @@
     .nav-icons{
         padding-right:80px;
     }
-    #primary-nav {
-  background-color: #f5f5ef;
-  
+        
+.topnav a {
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  padding: 20px 36px;
+  color:darkgray;
 }
 
-#menu a:hover {
-    color:#1e1e15 ;
-    border-bottom: #ffcc00 solid 5px;
+.topnav a:hover {
+  border-bottom: 3px solid #f0ad4e;
 }
-.nav-item a{
-    color:#1e1e15;
-    font-size:20px;
-    padding: 10px 10px;
-    padding-right:120px;
 
+.topnav a.active {
+  border-bottom: 3px solid #f0ad4e;
 }
+
+   
 .form-group input{
         width: 400px;
         color:gray;
@@ -83,28 +84,24 @@ select.form-control:focus {
                     </div>
             </nav>
             
-            <div id="primary-nav">
-
-                    <div class="container">
-                    <div id="menu">
-                      <ul class="nav">
-                        <li class="nav-item">
-                          <a href="#" class="nav-link">Edit Profile</a>
-                        </li>
-                        <li class="nav-item">
-                          <a href="#" class="nav-link">Change Password</a>
-                        </li>
-                        <li class="nav-item">
-                          <a href="#" class="nav-link">Invoice</a>
-                        </li>
-                        <li class="nav-item">
-                          <a href="#" class="nav-link">Certification</a>
-                        </li>
-                      </ul>    
-                    </div>
-                    </div>
-                    
-                  </div>
+             <div class="topnav">
+                 <div class="container">
+            <ul class="nav justify-content navbar-light bg-light">
+                    <li class="nav2-item">
+                      <a class="nav-link" href="#">Edit Profile</a>
+                    </li>
+                    <li class="nav2-item">
+                      <a class="nav-link" href="#">Change Password</a>
+                    </li>
+                    <li class="nav2-item">
+                      <a class="nav-link" href="#">Invoice</a>
+                    </li>
+                    <li class="nav2-item">
+                      <a class="nav-link" href="#">Certification</a>
+                    </li>
+                  </ul>
+                </div>
+        </div>
                   <div class="edit-profileForm">
                   <div class="container">
                   <div class="form-group">
